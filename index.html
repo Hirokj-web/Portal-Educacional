@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Educacional Completo</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="Script.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>📚 Portal Educacion</h1>
+    <button id="menu-toggle" aria-label="Abrir menu" class="menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="menu">
+      <a onclick="mostrarConteudo('matematica')"><i class="fas fa-square-root-alt"></i> Matemática</a>
+      <a onclick="mostrarConteudo('historia')"><i class="fas fa-landmark"></i> História</a>
+      <a onclick="mostrarConteudo('ciencias')"><i class="fas fa-flask"></i> Ciências</a>
+      <a onclick="mostrarConteudo('ia')"><i class="fas fa-robot"></i> Inteligência Artificial</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- MATEMÁTICA -->
+    <section id="matematica" class="content-section">
+      <h2>🧮 Matemática</h2>
+      <img src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png" alt="Ícone de matemática" class="icon-img">
+      <p><strong>Visão Geral:</strong> A matemática é a ciência que estuda padrões, estruturas, quantidade, espaço e mudança. É fundamental para todas as áreas científicas, tecnológicas e de engenharia.</p>
+
+      <h3>Áreas da Matemática</h3>
+      <ul>
+        <li><strong>Álgebra:</strong> manipulação de equações, expressões e fórmulas.</li>
+        <li><strong>Geometria:</strong> estudo de formas, volumes e áreas.</li>
+        <li><strong>Trigonometria:</strong> estudo de ângulos e relações entre lados de triângulos.</li>
+        <li><strong>Cálculo:</strong> limites, derivadas, integrais e séries.</li>
+        <li><strong>Estatística e Probabilidade:</strong> análise de dados, médias, desvios e probabilidades.</li>
+        <li><strong>Matemática Discreta:</strong> lógica, conjuntos, grafos e combinatória.</li>
+      </ul>
+
+      <h3>Exemplo Prático:</h3>
+      <p>Na vida real, a álgebra é usada para calcular empréstimos bancários, a geometria para arquitetura e engenharia, e a estatística para pesquisas de mercado ou saúde pública.</p>
+
+      <h3>Exercícios:</h3>
+      <ol>
+        <li>Resolva: 2x + 5 = 15.</li>
+        <li>Calcule a área de um triângulo com base 10 e altura 5.</li>
+        <li>Se um dado é lançado, qual a probabilidade de sair um número par?</li>
+      </ol>
+      <button class="toggle-answer" data-target="matRespostas">Mostrar respostas</button>
+      <div id="matRespostas" class="answer">
+        <ol>
+          <li>x = 5</li>
+          <li>Área = (10*5)/2 = 25</li>
+          <li>Probabilidade = 3/6 = 50%</li>
+        </ol>
+      </div>
+
+      <h3>Projetos e Aplicações:</h3>
+      <ul>
+        <li>Construção de planilhas financeiras com fórmulas matemáticas.</li>
+        <li>Desenvolvimento de gráficos e visualizações de dados.</li>
+        <li>Estudo de algoritmos de IA usando álgebra e estatística.</li>
+      </ul>
+
+      <h3>Referências:</h3>
+      <ul>
+        <li><a href="https://pt.khanacademy.org/math" target="_blank">Khan Academy – Matemática</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/Matem%C3%A1tica" target="_blank">Wikipedia – Matemática</a></li>
+        <li><a href="https://www.stewartcalculus.com/" target="_blank">Livro: Cálculo, James Stewart</a></li>
+      </ul>
+    </section>
+
+    <!-- HISTÓRIA -->
+    <section id="historia" class="content-section">
+      <h2>📜 História</h2>
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Ícone de história" class="icon-img">
+      <p><strong>Visão Geral:</strong> A história é o estudo das sociedades humanas ao longo do tempo, analisando eventos, culturas, revoluções, guerras, descobertas e impactos sociais.</p>
+
+      <h3>Períodos Históricos:</h3>
+      <ul>
+        <li><strong>Idade Antiga:</strong> civilizações como Egito, Mesopotâmia, Grécia e Roma.</li>
+        <li><strong>Idade Média:</strong> feudalismo, cruzadas, impérios e cultura religiosa.</li>
+        <li><strong>Idade Moderna:</strong> renascimento, descobertas marítimas e revoluções.</li>
+        <li><strong>Idade Contemporânea:</strong> revoluções industriais, guerras mundiais e globalização.</li>
+      </ul>
+
+      <h3>Exemplo Prático:</h3>
+      <p>A Revolução Industrial transformou sociedades rurais em urbanas e industriais. Hoje, a digitalização e a IA têm impacto semelhante em empregos, educação e comunicação.</p>
+
+      <h3>Atividades:</h3>
+      <ol>
+        <li>Analise a importância da Revolução Francesa.</li>
+        <li>Compare a Primeira e Segunda Guerras Mundiais.</li>
+        <li>Estude a globalização e seus efeitos sociais.</li>
+      </ol>
+      <button class="toggle-answer" data-target="histRespostas">Mostrar respostas</button>
+      <div id="histRespostas" class="answer">
+        <ol>
+          <li>Revolução Francesa trouxe liberdade, igualdade e cidadania.</li>
+          <li>Segunda Guerra trouxe avanço tecnológico e reconfiguração geopolítica.</li>
+          <li>Globalização aumentou comércio e comunicação entre países.</li>
+        </ol>
+      </div>
+
+      <h3>Projetos:</h3>
+      <ul>
+        <li>Criação de linha do tempo digital de eventos históricos.</li>
+        <li>Mini-documentário sobre uma guerra ou revolução.</li>
+        <li>Comparação de tecnologias antigas e atuais.</li>
+      </ul>
+
+      <h3>Referências:</h3>
+      <ul>
+        <li><a href="https://pt.khanacademy.org/humanities/world-history" target="_blank">Khan Academy – História Mundial</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/Hist%C3%B3ria" target="_blank">Wikipedia – História</a></li>
+        <li><a href="https://www.britannica.com/topic/history" target="_blank">Encyclopaedia Britannica</a></li>
+      </ul>
+    </section>
+
+    <!-- CIÊNCIAS -->
+    <section id="ciencias" class="content-section">
+      <h2>🔬 Ciências</h2>
+      <img src="https://cdn-icons-png.flaticon.com/512/2881/2881142.png" alt="Ícone de ciências" class="icon-img">
+      <p><strong>Visão Geral:</strong> As ciências estudam o universo, vida, matéria e energia. Incluem Física, Química, Biologia e Astronomia.</p>
+
+      <h3>Ramos Principais:</h3>
+      <ul>
+        <li><strong>Física:</strong> leis do movimento, energia, eletricidade e mecânica quântica.</li>
+        <li><strong>Química:</strong> composição da matéria, reações químicas, tabela periódica.</li>
+        <li><strong>Biologia:</strong> ecossistemas, genética, evolução e anatomia.</li>
+        <li><strong>Astronomia:</strong> planetas, estrelas, galáxias e cosmologia.</li>
+      </ul>
+
+      <h3>Experimentos e Observações:</h3>
+      <ol>
+        <li>Construção de um circuito elétrico simples.</li>
+        <li>Reação de vinagre e bicarbonato.</li>
+        <li>Germinação de plantas em algodão.</li>
+      </ol>
+      <button class="toggle-answer" data-target="cienRespostas">Mostrar respostas</button>
+      <div id="cienRespostas" class="answer">
+        <ol>
+          <li>Lâmpada acende mostrando fluxo de corrente.</li>
+          <li>Produção de gás CO₂.</li>
+          <li>Observação de crescimento e fotossíntese.</li>
+        </ol>
+      </div>
+
+      <h3>Projetos:</h3>
+      <ul>
+        <li>Laboratório caseiro de química segura.</li>
+        <li>Observação de estrelas e planetas com mapa estelar.</li>
+        <li>Experimento de crescimento de plantas e registro fotográfico.</li>
+      </ul>
+
+      <h3>Referências:</h3>
+      <ul>
+        <li><a href="https://www.nasa.gov/" target="_blank">NASA</a></li>
+        <li><a href="https://pt.khanacademy.org/science" target="_blank">Khan Academy – Ciências</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/Ci%C3%AAncia" target="_blank">Wikipedia – Ciência</a></li>
+      </ul>
+    </section>
+
+    <!-- INTELIGÊNCIA ARTIFICIAL -->
+    <section id="ia" class="content-section">
+      <h2>🤖 Inteligência Artificial</h2>
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" alt="Ícone de IA" class="icon-img">
+      <p><strong>Visão Geral:</strong> A IA é a ciência de criar máquinas e programas capazes de executar tarefas inteligentes, aprender e tomar decisões.</p>
+
+      <h3>Áreas Principais:</h3>
+      <ul>
+        <li>Aprendizado de Máquina (Machine Learning)</li>
+        <li>Redes Neurais e Deep Learning</li>
+        <li>Processamento de Linguagem Natural (NLP)</li>
+        <li>Visão Computacional</li>
+        <li>Robótica</li>
+        <li>Sistemas Especialistas</li>
+      </ul>
+
+      <h3>Exemplo Prático:</h3>
+      <p>Assistentes virtuais, carros autônomos, filtros de e-mail e recomendações em aplicativos são exemplos reais de IA no dia a dia.</p>
+
+      <h3>Exercício:</h3>
+      <p>Liste três áreas que utilizam IA atualmente.</p>
+      <button class="toggle-answer" data-target="iaRespostas">Mostrar respostas</button>
+      <div id="iaRespostas" class="answer">
+        <p>Saúde, Educação, Transporte.</p>
+      </div>
+
+      <h3>Referências:</h3>
+      <ul>
+        <li><a href="https://pt.khanacademy.org/computing/computer-science" target="_blank">Khan Academy – Computação e IA</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/Intelig%C3%AAncia_artificial" target="_blank">Wikipedia – Inteligência Artificial</a></li>
+        <li><a href="https://openai.com/" target="_blank">OpenAI</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
